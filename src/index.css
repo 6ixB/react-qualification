@@ -1,0 +1,46 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  gap: 3rem;
+  margin: 1.5rem 0 3rem 0;
+  padding: 0;
+}
+
+.list-card {
+  width: 18rem;
+  font-size: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .list ul {
+    grid-template-columns: auto auto;
+  }
+
+  .list-card {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list ul {
+    grid-template-columns: auto auto auto;
+  }
+
+  .list-card {
+    width: 22rem;
+  }
+}
